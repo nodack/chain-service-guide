@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>合同会社CHAIN｜サービスのご案内</title>
+<meta name="description" content="合同会社CHAIN（大阪）のAI導入支援サービス案内。AIコンサルティング・AI研修・業務自動化／システム開発を、構想から実装まで一貫してご支援します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1A1A1A;--gray:#6B7280;--gray-2:#9AA0A6;
+    --line:#ECECEC;--line-2:#F4F2EF;--bg:#FFFFFF;--soft:#FBFAF8;
+    --accent:#EA580C;--accent-deep:#C2410C;--accent-soft:#FDEEE3;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:var(--soft);}
+  body{font-family:"Noto Sans JP","Inter",sans-serif;color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased;padding:40px 16px 60px;display:flex;justify-content:center;}
+  .doc{width:100%;max-width:680px;background:var(--bg);border:1px solid var(--line);padding:52px 52px 44px;}
+
+  .kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;color:var(--gray);letter-spacing:.04em;margin-bottom:26px;}
+  .kicker .dot{width:6px;height:6px;border-radius:50%;background:var(--accent);}
+  .h1{font-size:28px;font-weight:700;line-height:1.55;letter-spacing:.01em;}
+  .h1 .hl{background:linear-gradient(transparent 62%,var(--accent-soft) 62%);padding:0 2px;}
+  .lead{margin-top:18px;font-size:15px;color:var(--gray);line-height:1.9;max-width:38em;}
+  .signline{margin-top:20px;font-size:13px;color:var(--gray-2);}
+  .signline b{color:var(--ink);font-weight:700;}
+
+  .eyebrow{font-size:12px;font-weight:700;color:var(--accent-deep);letter-spacing:.08em;margin-bottom:18px;}
+  .divide{height:1px;background:var(--line);margin:44px 0;border:0;}
+
+  .pains{display:flex;flex-direction:column;gap:0;}
+  .pain{display:flex;gap:13px;align-items:flex-start;padding:15px 0;border-bottom:1px solid var(--line-2);font-size:15px;color:var(--ink);line-height:1.7;}
+  .pain:last-child{border-bottom:0;}
+  .pain .q{flex:none;width:22px;height:22px;border-radius:50%;background:var(--soft);border:1px solid var(--line);color:var(--gray);font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-top:3px;font-family:"Inter",sans-serif;}
+
+  .svc{border:1px solid var(--line);border-radius:12px;padding:24px 24px 22px;margin-bottom:16px;}
+  .svc:last-child{margin-bottom:0;}
+  .svc-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px;}
+  .svc-no{font-family:"Inter",sans-serif;font-size:12px;font-weight:600;color:var(--accent-deep);letter-spacing:.06em;margin-bottom:5px;}
+  .svc-name{font-size:18px;font-weight:700;letter-spacing:.01em;line-height:1.45;}
+  .svc-price{flex:none;text-align:right;font-family:"Inter",sans-serif;font-weight:700;font-size:20px;color:var(--ink);white-space:nowrap;line-height:1.3;}
+  .svc-price small{display:block;font-family:"Noto Sans JP",sans-serif;font-size:11px;font-weight:500;color:var(--gray);margin-top:1px;}
+  .svc-desc{margin-top:13px;font-size:14px;color:var(--gray);line-height:1.85;}
+  .svc-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:15px;}
+  .tag{font-size:12px;color:var(--accent-deep);background:var(--accent-soft);border-radius:6px;padding:5px 10px;line-height:1.5;}
+  .svc-fit{margin-top:14px;padding-top:13px;border-top:1px dashed var(--line);font-size:13px;color:var(--gray-2);}
+  .svc-fit b{color:var(--ink);font-weight:700;}
+  .free-note{display:inline-block;margin-top:13px;font-size:12.5px;font-weight:700;color:var(--accent-deep);background:var(--accent-soft);border-radius:6px;padding:7px 12px;line-height:1.6;}
+
+  .why{display:grid;grid-template-columns:1fr 1fr 1fr;gap:26px;}
+  .why h4{font-size:15px;font-weight:700;margin-bottom:7px;}
+  .why h4 .n{font-family:"Inter",sans-serif;color:var(--accent);margin-right:7px;}
+  .why p{font-size:13px;color:var(--gray);line-height:1.8;}
+
+  .steps{display:flex;flex-direction:column;gap:0;}
+  .step{display:flex;gap:16px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line-2);}
+  .step:last-child{border-bottom:0;}
+  .step .sn{flex:none;width:26px;height:26px;border-radius:50%;border:1.5px solid var(--accent);color:var(--accent-deep);font-family:"Inter",sans-serif;font-size:12px;font-weight:600;display:flex;align-items:center;justify-content:center;margin-top:2px;}
+  .step .st{font-size:15px;font-weight:700;}
+  .step .sd{font-size:13px;color:var(--gray);margin-top:1px;}
+
+  .cta{margin-top:44px;background:var(--accent);border-radius:12px;padding:30px 30px 26px;color:#fff;}
+  .cta-h{font-size:19px;font-weight:700;}
+  .cta-h .hl{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:3px;}
+  .cta-inner{display:flex;gap:28px;align-items:center;flex-wrap:wrap;margin-top:18px;}
+  .cta-text{flex:1;min-width:220px;}
+  .cta-p{font-size:13px;color:#FFE3CC;line-height:1.85;}
+  .cta-line{margin-top:14px;font-size:13px;font-weight:700;color:#fff;line-height:1.7;}
+  .qr-card{flex:none;background:#fff;border-radius:12px;padding:14px 14px 11px;text-align:center;}
+  .qr-card img{width:150px;height:150px;display:block;border-radius:6px;}
+  .qr-ph{width:150px;height:150px;border-radius:6px;background:var(--soft);border:1px dashed var(--line);display:flex;align-items:center;justify-content:center;text-align:center;font-size:11px;color:var(--gray-2);line-height:1.6;padding:10px;}
+  .qr-card span{display:block;margin-top:9px;font-size:11px;font-weight:700;color:var(--ink);letter-spacing:.02em;}
+
+  .foot{margin-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px;font-size:11px;color:var(--gray-2);}
+  .foot .en{font-family:"Inter",sans-serif;letter-spacing:.04em;}
+
+  @media(max-width:560px){
+    body{padding:18px 8px 40px;}
+    .doc{padding:34px 22px 30px;border-radius:12px;}
+    .h1{font-size:22px;}
+    .why{grid-template-columns:1fr;gap:18px;}
+    .svc-head{flex-direction:column;gap:6px;}
+    .svc-price{text-align:left;}
+    .cta-inner{justify-content:center;}
+    .qr-card{margin:4px auto 0;}
+  }
+</style>
+</head>
+<body>
+  <div class="doc">
+
+    <div class="kicker"><span class="dot"></span>合同会社CHAIN ｜ AI導入支援・大阪</div>
+    <h1 class="h1">貴社のAI活用を、<span class="hl">構想から実装まで</span>一貫してご支援します。</h1>
+    <p class="lead">生成AIの活用設計から、研修・業務自動化システムの開発までを一貫してご支援します。専門用語に頼らず、現場で運用できる形に落とし込んでご提案します。</p>
+    <p class="signline">担当｜<b>野田 剛佑</b>（合同会社CHAIN 代表／AIコンサルタント）</p>
+
+    <hr class="divide">
+
+    <div class="eyebrow">AI活用に、こんな課題はありませんか？</div>
+    <div class="pains">
+      <div class="pain"><span class="q">?</span><span>生成AIに関心はあるが、自社のどの業務に活用できるか整理できていない</span></div>
+      <div class="pain"><span class="q">?</span><span>ツールやサービスが多く、自社に最適な選択肢を判断しづらい</span></div>
+      <div class="pain"><span class="q">?</span><span>大手への依頼はコストが高く、社内にAIを推進できる人材もいない</span></div>
+    </div>
+
+    <hr class="divide">
+
+    <div class="eyebrow">3つのご支援メニュー</div>
+
+    <div class="svc">
+      <div class="svc-head">
+        <div>
+          <div class="svc-no">01 ｜ 顧問・伴走支援</div>
+          <div class="svc-name">AIコンサルティング</div>
+        </div>
+        <div class="svc-price">¥55,000<small>／ 月（税込）</small></div>
+      </div>
+      <p class="svc-desc">御社のAI活用全体を、継続的に伴走してご支援します。現状の棚卸しから施策の優先順位づけ、ツール選定まで、経営と現場の両面からご相談に対応します。</p>
+      <div class="svc-meta">
+        <span class="tag">月1回ミーティング（オンライン／対面）</span>
+        <span class="tag">チャットでの随時相談</span>
+      </div>
+      <div class="svc-fit"><b>対象 ▸</b> 継続的な相談・伴走をお求めの企業様</div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-head">
+        <div>
+          <div class="svc-no">02 ｜ 人材育成</div>
+          <div class="svc-name">AI研修</div>
+        </div>
+        <div class="svc-price">¥22,000<small>／ 1回・90分</small></div>
+      </div>
+      <p class="svc-desc">画一的な研修は行いません。まず現在の業務フローや目標、課題となっている作業、AI活用の習熟度をうかがって棚卸ししたうえで、御社専用のカリキュラムを設計し、実施いたします。</p>
+      <span class="free-note">▸ 事前のヒアリング・ご提案は無料です。内容にご納得いただいたうえで実施いたします。</span>
+      <div class="svc-fit"><b>対象 ▸</b> AI活用を組織に定着させたい企業様</div>
+    </div>
+
+    <div class="svc">
+      <div class="svc-head">
+        <div>
+          <div class="svc-no">03 ｜ 開発・自動化</div>
+          <div class="svc-name">業務自動化・システム開発</div>
+        </div>
+        <div class="svc-price">応相談<small>／ お見積り</small></div>
+      </div>
+      <p class="svc-desc">目的や業務によって、最適な手段・規模は大きく異なります。見積・予約・在庫管理といった定型業務の自動化から、御社専用システムの開発まで、目的に合わせてオーダーメイドで設計・構築いたします。まずは実現されたい状態をお聞かせください。</p>
+      <div class="svc-meta">
+        <span class="tag">御社専用にオーダーメイド設計</span>
+        <span class="tag">スモールスタートから拡張可能</span>
+      </div>
+      <div class="svc-fit"><b>対象 ▸</b> 特定業務の効率化・自社専用システムをご検討の企業様</div>
+    </div>
+
+    <hr class="divide">
+
+    <div class="eyebrow">選ばれる理由</div>
+    <div class="why">
+      <div>
+        <h4><span class="n">01</span>実装まで一貫</h4>
+        <p>ご提案にとどまらず、研修から業務自動化システムの開発まで、実装まで自ら手がけます。</p>
+      </div>
+      <div>
+        <h4><span class="n">02</span>適正なコスト</h4>
+        <p>大手に依頼するより低コスト。必要な範囲からスモールスタートでき、費用対効果を見ながら進められます。</p>
+      </div>
+      <div>
+        <h4><span class="n">03</span>現場目線</h4>
+        <p>専門用語に頼らず、現場でそのまま運用できる形に落とし込んでご提案します。</p>
+      </div>
+    </div>
+
+    <hr class="divide">
+
+    <div class="eyebrow">ご相談からの流れ</div>
+    <div class="steps">
+      <div class="step"><span class="sn">1</span><div><div class="st">無料相談</div><div class="sd">オンライン30分。現状と目的をうかがい、可能性を整理します。</div></div></div>
+      <div class="step"><span class="sn">2</span><div><div class="st">ヒアリング・課題整理</div><div class="sd">業務課題や目標をうかがい、改善余地を洗い出します。</div></div></div>
+      <div class="step"><span class="sn">3</span><div><div class="st">ご提案・お見積り</div><div class="sd">最適なプランと費用を明確にご提示します。</div></div></div>
+      <div class="step"><span class="sn">4</span><div><div class="st">ご契約・開始</div><div class="sd">ご納得いただいたうえで着手し、段階的に進めます。</div></div></div>
+    </div>
+
+    <div class="cta">
+      <div class="cta-h">まずは<span class="hl">無料相談</span>から。</div>
+      <div class="cta-inner">
+        <div class="cta-text">
+          <p class="cta-p">「課題が明確でない段階」でも問題ございません。現状をうかがい、AIで実現できることを一緒に整理いたします。</p>
+          <div class="cta-line">LINEで友だち追加 ▸ そのままご相談ください。</div>
+        </div>
+        <div class="qr-card">
+          <div class="qr-ph">QRコードは<br>準備中です<br>（LINE URLをご共有ください）</div>
+          <span>LINEで友だち追加</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="foot">
+      <span>合同会社CHAIN ｜ 大阪市福島区</span>
+      <span class="en">CHAIN — AI / DX Partner</span>
+    </div>
+
+  </div>
+</body>
+</html>
